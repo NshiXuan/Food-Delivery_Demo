@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>送外卖</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favicon.png">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/Swiper/7.4.1/swiper-bundle.min.css">
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header class="header">
+    <!-- 导航栏 -->
+    <nav class="navbar">
+      <div class="row container d-flex">
+        <a href="/" class="logo">
+          <img src="./images/logo.svg" alt="">
+        </a>
+
+        <ul class="nav-list d-flex">
+          <a href="">首页</a>
+          <a href="">商店</a>
+          <a href="">页面</a>
+          <a href="">关于我们</a>
+          <a href="">查找</a>
+          <a href="#" class="login-link">登录</a>
+          <span class="close d-flex"><i class="bx bx-x"></i></span>
+        </ul>
+
+        <div class="side-icons d-flex">
+          <div class="search-icon d-flex">
+            <i class="bx bx-search"></i>
+          </div>
+          <div class="cart-icon d-flex">
+            <i class="bx bx-shopping-bag"></i>
+            <span></span>
+          </div>
+          <a class="btn login">登录</a>
+        </div>
+
+        <!-- 菜单界面 -->
+        <div class="hamburger d-flex">
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- 主页 -->
+    <div class="home">
+      <div class="row container d-flex">
+        <div class="content">
+          <span>更快为您服务</span>
+          <h1>
+            是<span>最快的</span>在<br />
+            <span>交付</span>您的<br>
+            美味<span>食品</span>
+          </h1>
+          <p>
+            这里的东西都是免费的
+            你想写什么就写什么吧
+          </p>
+          <div class="button d-flex">
+            <button class="btn buy-btn">立即购买</button>
+            <button class="btn watch-btn d-flex">
+              <img src="./images/video-icon.svg" alt="">
+              <span>看视频</span>
+            </button>
+          </div>
+        </div>
+
+        <img src="./images/person.png" class="person" alt="">
+      </div>
+    </div>
+
+    <!-- 页面中的图形 -->
+    <div class="triangle"></div>
+    <div class="rectangle rectangle1"></div>
+    <div class="rectangle rectangle2"></div>
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+
+    <!-- 视频 -->
+    <div class="wrapper d-flex">
+      <video class="video">
+        <source src="./images/Pad Thai.mp4" type="video/mp4">
+        <source src="./images/Pad Thai.webm" type="video/webm">
+      </video>
+      <div class="close-video">
+        <i class="bx bx-x"></i>
+      </div>
+      <span class="video-control d-flex">
+        <i class="bx bx-play"></i>
+        <!-- <i class='bx bx-play-circle bx-flip-vertical'></i> -->
+      </span>
+    </div>
+
+    <!-- 登录框 -->
+    <div class="form-wrapper">
+      <form action="" class="form">
+        <h2>登录</h2>
+
+        <div class="control">
+          <label for="">电子邮件:</label>
+          <input type="email" placeholder="请输入你的电子邮箱">
+        </div>
+        <div class="control">
+          <label for="">密码:</label>
+          <input type="password" placeholder="密码">
+        </div>
+        <div class="checkbox d-flex">
+          <input type="checkbox">
+          <span>记住我</span>
+        </div>
+        <button class="btn">登录</button>
+        <div class="links">
+          <span>
+            忘记密码?
+            <a href="#">点击这里</a>
+          </span>
+          <span>
+            没有账户?
+            <a href="#">创建一个</a>
+          </span>
+        </div>
+      </form>
+
+      <div class="close-form">
+        <i class="bx bx-x"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- 菜单 -->
+  <section class="dishes">
+    <div class="row container">
+      <div class="title">
+        <span>我们最好的菜肴</span>
+        <h1>
+          总是<br>
+          让你吃饱 的菜
+        </h1>
+        <p>
+          目前就下面几样菜了<br>
+          你爱要不要吧
+        </p>
+      </div>
+
+      <!-- 商品列表 -->
+      <div class="products-container">
+        <div class="filters">
+          <div class="foods">
+            <img src="./images/hamburger.png" alt="">
+            汉堡
+          </div>
+          <div class="foods">
+            <img src="./images/fries.png" alt="">
+            薯条
+          </div>
+          <div class="foods">
+            <img src="./images/straw.png" alt="">
+            苏打
+          </div>
+          <div class="foods">
+            <img src="./images/pizza.png" alt="">
+            披萨
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- 购买流程 -->
+  <section class="buying-procedure">
+    <div class="row container">
+      <div class="title">
+        <span>一步步</span>
+        <h1>怎么购买的</h1>
+        <p>
+          怎么购买的？<br>
+          请按照下面流程进行购买
+        </p>
+      </div>
+
+      <div class="steps-container">
+        <div class="step">
+          <span class="square-icon"></span>
+          <h3>选择菜肴</h3>
+          <p>
+            菜品不多，食用安全，请放心选择.
+          </p>
+          <a href="">阅读更多 >></a>
+        </div>
+        <div class="step">
+          <span class="square-icon"></span>
+          <h3>添加菜肴</h3>
+          <p>
+            美味佳肴，巨香无比，多多益善.
+          </p>
+          <a href="">阅读更多 >></a>
+        </div>
+        <div class="step">
+          <span class="square-icon"></span>
+          <h3>付款和订购</h3>
+          <p>
+            诚信经营，童叟无欺，请放心购买.
+          </p>
+          <a href="">阅读更多 >></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="testimonials">
+    <div class="row container">
+      <div class="title">
+        <span>他们怎么说</span>
+        <h1>我们的客户怎么说</h1>
+        <p>
+          美味佳肴，<br>
+          好评如潮.
+        </p>
+      </div>
+
+      <div class="testimonials-slider">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="col d-flex">
+                  <div class="info d-flex">
+                    <div class="image">
+                      <img src="./images/profile-1.jpg" alt="">
+                    </div>
+                    <div>
+                      <h4>小红</h4>
+                      <span>湖南</span>
+                    </div>
+                  </div>
+
+                  <!-- 评价 -->
+                  <div class="rating d-flex">
+                    <span>4.5</span>
+                    <span>
+                      <i class="bx bxs-star"></i>
+                    </span>
+                  </div>
+
+                </div>
+
+                <p class="col">
+                  这是我吃过最好吃的食物，十分推荐！
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="col d-flex">
+                  <div class="info d-flex">
+                    <div class="image">
+                      <img src="./images/profile-2.jpg" alt="">
+                    </div>
+                    <div>
+                      <h4>猪小明</h4>
+                      <span>云南</span>
+                    </div>
+                  </div>
+
+                  <!-- 评价 -->
+                  <div class="rating d-flex">
+                    <span>4.5</span>
+                    <span>
+                      <i class="bx bxs-star"></i>
+                    </span>
+                  </div>
+
+                </div>
+
+                <p class="col">
+                  好吃极了，我超喜欢吃的！
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="col d-flex">
+                  <div class="info d-flex">
+                    <div class="image">
+                      <img src="./images/profile-3.jpg" alt="">
+                    </div>
+                    <div>
+                      <h4>老王</h4>
+                      <span>湖北</span>
+                    </div>
+                  </div>
+
+                  <!-- 评价 -->
+                  <div class="rating d-flex">
+                    <span>4.5</span>
+                    <span>
+                      <i class="bx bxs-star"></i>
+                    </span>
+                  </div>
+
+                </div>
+
+                <p class="col">
+                  这是我这辈子吃过最好吃的东西，不买绝对会后悔的！
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="col d-flex">
+                  <div class="info d-flex">
+                    <div class="image">
+                      <img src="./images/profile-4.jpg" alt="">
+                    </div>
+                    <div>
+                      <h4>张三</h4>
+                      <span>山东</span>
+                    </div>
+                  </div>
+
+                  <!-- 评价 -->
+                  <div class="rating d-flex">
+                    <span>4.5</span>
+                    <span>
+                      <i class="bx bxs-star"></i>
+                    </span>
+                  </div>
+
+                </div>
+
+                <p class="col">
+                  这么好吃的东西，这辈子值了！
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="navigation d-flex">
+            <!-- 如果需要分页器 -->
+            <div class="custom-pagination"></div>
+            <!-- 左右箭头 -->
+            <div class="d-flex">
+              <div class="custom-button custom-button-prev">
+                <i class="bx bx-left-arrow-alt"></i>
+              </div>
+              <div class="custom-button custom-button-next">
+                <i class="bx bx-right-arrow-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 反馈 -->
+  <section class="contact">
+    <div class="row container">
+      <div class="title">
+        <span>这么反馈呢</span>
+        <h1>我们的客户怎么反馈</h1>
+        <p>
+          看右边，<br>
+          在文本框里填入信息反馈即可.
+        </p>
+      </div>
+
+      <form class="d-flex">
+        <div class="d-flex">
+          <label for="email">邮箱</label>
+          <input type="email" placeholder="输入电子邮箱">
+        </div>
+        <div class="message d-flex">
+          <label for="message">信息</label>
+          <textarea placeholder="信息"></textarea>
+        </div>
+        <button type="submit" class="btn">反馈</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 买家秀 -->
+  <section class="articles">
+    <div class="row container">
+      <div class="title">
+        <span>买家秀</span>
+        <h1>我们的客户怎么说</h1>
+        <p>
+          有图有真相<br>
+          图片仅供参考.
+        </p>
+      </div>
+
+      <div class="articles-container">
+        <div class="article">
+          <img src="./images/article-1.jpg" alt="">
+          <h3>美味的</h3>
+          <p>
+            好吃的鸡排<br>
+            太好吃了.
+          </p>
+          <span class="data">2021 年 1 月 10 日</span>
+        </div>
+        <div class="article">
+          <img src="./images/article-2.jpg" alt="">
+          <h3>时髦的</h3>
+          <p>
+            美味的汉堡<br>
+            太好吃了.
+          </p>
+          <span class="data">2021 年 1 月 10 日</span>
+        </div>
+        <div class="article">
+          <img src="./images/article-3.jpg" alt="">
+          <h3>流口水的</h3>
+          <p>
+            美味的披萨<br>
+            太好吃了.
+          </p>
+          <span class="data">2021 年 1 月 10 日</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer bg-color1">
+    <div class="row container">
+      <div class="col">
+        <a href="" class="logo">
+          <img src="./images/logo.svg" alt="">
+        </a>
+        <div class="icons">
+          <div class="icon">
+            <i class="bx bxl-facebook"></i>
+          </div>
+          <div class="icon">
+            <i class="bx bxl-twitter"></i>
+          </div>
+          <div class="icon">
+            <i class="bx bxl-instagram"></i>
+          </div>
+          <div class="icon">
+            <i class="bx bxl-youtube"></i>
+          </div>
+        </div>
+        <p>
+          版权所有 2021<br>
+          @QQ1743091664
+        </p>
+      </div>
+      <div class="col">
+        <div>
+          <h4>产品</h4>
+          <a href="">下载</a>
+          <a href="">价格</a>
+          <a href="">地点</a>
+        </div>
+        <div>
+          <h4>类别</h4>
+          <a href="">男士</a>
+          <a href="">女性</a>
+          <a href="">孩童</a>
+        </div>
+        <div>
+          <h4>我的帐户</h4>
+          <a href="">我的帐户</a>
+          <a href="">折扣</a>
+          <a href="">退货</a>
+        </div>
+        <div>
+          <h4>关于我们</h4>
+          <a href="">
+            <i class="bx bxs-map"></i> 中国
+          </a>
+          <a href="">
+            <i class="bx bxs-envelope"></i> info@baidu<br>.com
+          </a>
+          <a href="">
+            <i class="bx bxs-phone"></i>
+            12306
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 导入 Swiper.JS -->
+  <script src="https://cdn.staticfile.org/Swiper/7.4.1/swiper-bundle.min.js"></script>
+  <!-- 导入自定义JS -->
+  <script src="./js/main.js"></script>
+  <script src="./js/products.js"></script>
+</body>
+
+</html>
